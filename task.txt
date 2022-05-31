@@ -1,0 +1,15 @@
+Task: 1
+
+    Q) Difference between HTTP/1.1 and HTTP/2?
+
+For every TCP connection there is only one request and response. But HTTP/1.1 supports connection reuse
+
+Uses multiplexing, over a single TCP connection. It is done using streams and it also provide feature called server push. 
+Introduces a warning header field to carry additional information about status of message(24 status code) and its error reporting is quicker and efficient
+Headers and status code of HTTP remains same.
+It uses digest authentication and NTML authentication
+Security concern from previous version will continue to be seen in HTTP/2. However it is better equipped to deal with them 
+It has additional header like cache-control
+Does not change much in terms of caching with server push. If the client find resource present already in cache it cancel the push stream
+Text Based protocol that is in the readable format
+It is a binary protocol
